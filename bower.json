@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-socketio",
+  "description": "",
+  "main": "",
+  "authors": [
+    "zhangjindong <monkey8d8jin@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

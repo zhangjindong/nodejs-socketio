@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %>socket.io</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>socket.io</h1>
+    <p>Welcome to socket.io</p>
+    <script src="/javascripts/socket.io-client/socket.io.js"></script>
+    <script>
+    var socket = io.connect('http://127.0.0.1:3000/chat');
+    socket.on('news', function(data) {
+        console.log(data);
+        socket.emit('my other event', {
+            my: 'data'
+        });
+    });
+    </script>
+</body>
+
+</html>
